@@ -25,7 +25,7 @@
 
   const contentDiv = document.querySelector('.content');
 
-  db.ref("t-group").on("value", snap => {
+  db.ref("t_group").on("value", snap => {
     contentDiv.innerHTML = "";
     snap.forEach(child => {
       const data = child.val();
